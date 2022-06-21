@@ -11,5 +11,6 @@
 </head>
 <body>
     <?php require('views/header.php'); ?>
+    
 </body>
 </html>

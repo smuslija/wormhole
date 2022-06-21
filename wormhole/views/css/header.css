@@ -1,3 +1,9 @@
+:root {
+  --bg-blue: hsla(223, 95%, 22%, 0.705);
+  --hover-blue: hsla(216, 85%, 36%, 0.877);
+  --bg-dark: hsl(345, 6%, 13%);
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -8,7 +14,7 @@ li {
 }
 
 header {
-  background-color: rgb(0, 0, 0);
+  background: var(--bg-dark);
 }
 
 .navbar {
@@ -35,7 +41,7 @@ header {
 }
 
 .nav-link:hover {
-  color: blue;
+  color: var(--hover-blue);
 }
 
 .hamburger {

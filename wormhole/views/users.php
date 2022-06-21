@@ -19,11 +19,11 @@ $uiController->deletePostUiController();
 $uiController->editPostUiController();
 
 
-if(isset($_GET['action'])){
+/* if(isset($_GET['action'])){
     if($_GET['action'] == 'ok'){
       echo'dati inseriti correttamente';
     }
-}
+} */
 ?>
 <h2>UTENTI</h2>
 <?php
@@ -44,31 +44,35 @@ if(isset($_GET['action'])){
                 <h3 class="form-title">Create New User</h3>
             </div>
             <div class="form-inputs">
-                <div class="form-group">
-                    <label for="posty-title">Nome</label>
-                    <input type="posty-title" class="form-control" placeholder="posty-title" name="first-name">
-                </div>
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="posty-title">Nome</label>
+                        <input type="posty-title" class="form-control" placeholder="posty-title" name="first-name">
+                    </div>
 
-                <div class="form-group">
-                    <label for="last-name">Cognome</label>
-                    <input type="last-name" class="form-control" placeholder="last-name" name="last-name">
+                    <div class="form-group">
+                        <label for="last-name">Cognome</label>
+                        <input type="last-name" class="form-control" placeholder="last-name" name="last-name">
+                    </div>
                 </div>
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="company">Società</label>
+                        <input type="company" class="form-control" placeholder="company" name="company">
+                    </div>
 
-                <div class="form-group">
-                    <label for="company">Società</label>
-                    <input type="company" class="form-control" placeholder="company" name="company">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" placeholder="email" name="email">
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control" placeholder="email" name="email">
+                <div class="form-group-wrapper">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" placeholder="password" name="password">
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="text" class="form-control" placeholder="password" name="password">
-                </div>
-            </div>
+            </div>  
             <button type="submit" class="btn btn-block btn-primary" name="signup-new-user">Invia</button>
         </form>
 

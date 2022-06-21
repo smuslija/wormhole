@@ -74,19 +74,17 @@ class UiController {
             $responseDb = UsersDataModel::showSingleUserDataModel($uiControllerData, "public.users");
 
             
-            echo ('
-                <section class="user-card">
-                        <input hidden value="'.$responseDb["id"].'" name="userId">
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                                <input type="email" class="form-control"  aria-describedby="emailHelp" value="'.$responseDb["email"].'" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">password</label>
-                                <input type="text" class="form-control"  aria-describedby="passwordHelp" value="'.$responseDb["password"].'" name="password" required>
-                        </div>
-                        <button type="submit" name="edit-user">Edit User</button>
-                </section>
+            echo ('                
+                <input hidden value="'.$responseDb["id"].'" name="userId">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                        <input type="email" class="form-control"  aria-describedby="emailHelp" value="'.$responseDb["email"].'" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">password</label>
+                        <input type="text" class="form-control"  aria-describedby="passwordHelp" value="'.$responseDb["password"].'" name="password" required>
+                </div>
+                <button type="submit" name="edit-user">Edit User</button>
                 ');        
         }
     }
