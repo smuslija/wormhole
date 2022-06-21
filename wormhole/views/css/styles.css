@@ -3,7 +3,7 @@
 :root {
   --bg-black: #071566e1;
   --bg-blue: #2d60ebb6;
-  --main-hot: #081353;
+  --main-hot: #eb7412f6;
   --bg--main-white: #fcfcfcfa;
 }
 
@@ -16,7 +16,7 @@
 
 body {
   font-size: 20px;
-  
+
   background-color: var(--bg-main-white);
 }
 
@@ -103,32 +103,6 @@ body {
   border: 2px solid black;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .private-form {
-    margin-bottom: 20px;
-    padding: 20px 0;
-  }
-
-  .private-list,
-  .private-form {
-    max-width: 90%;
-  }
-}
-
 /* Banner */
 .banner {
   color: rgba(255, 255, 255, 0.911);
@@ -140,6 +114,7 @@ body {
   background-image: url("./img/satelite.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .banner-title {
@@ -212,21 +187,19 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 4rem 0;
-  
 }
-.presentation-cards-wrapper>h3, .presentation-cards-wrapper>p{
-  font-family: 'Montserrat', sans-serif;
+.presentation-cards-wrapper > h3,
+.presentation-cards-wrapper > p {
+  font-family: "Montserrat", sans-serif;
   color: rgba(255, 255, 255, 0.966);
-} 
+}
 
-.presentation-wrapper-header{
+.presentation-wrapper-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   padding: 2em 0;
-  background-color: var(--main-hot);
-  padding-bottom:25rem;
-  padding-top:25rem;
+  background-color: var(--bg--main-white);
 }
 .presentation-card {
   border-radius: 0.2rem;
@@ -235,10 +208,56 @@ body {
   padding: 2rem;
 }
 
-
-.container{
+.container {
   display: flex;
   flex-direction: column;
 }
 
-/* Generale * /
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .private-form {
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+
+  .private-list,
+  .private-form {
+    max-width: 90%;
+  }
+
+  .banner {
+    padding-top: 2rem;
+
+    padding-bottom: 6rem;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 0.12rem;
+    line-height: 3rem;
+    font-family: "Source Code Pro", monospace;
+
+    max-width: 60%;
+  }
+
+  .presentation-cards-wrapper,
+  .presentation-wrapper-header {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    padding: 0;
+  }
+}

@@ -1,4 +1,5 @@
 <main>
+    
     <div class="banner">
         <h3 class="banner-title">
             Il Wormhole è una scorciatoia tra zone diverse dello spazio,
@@ -9,7 +10,7 @@
             <button class=" cta">Chi siamo?</button>
         </div>
     </div>   
-    </div>
+    
  
    <div class="container">
     <div class="presentation-wrapper-header">
