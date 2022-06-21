@@ -8,3 +8,4 @@ require('controllers/UiController.php');
 $uiController = new UiController();
 $uiController->showTemplate();
 $uiController->routing();
+echo"test";
