@@ -1,7 +1,7 @@
 :root {
-  --bg-blue: hsla(223, 95%, 22%, 0.705);
-  --hover-blue: hsla(216, 85%, 36%, 0.877);
-  --bg-dark: hsl(345, 6%, 13%);
+  --bg-black: #071566e1;
+  --bg-blue: #2d60ebb6;
+  --main-hot: #d37823d3;
 }
 
 a {
@@ -14,7 +14,8 @@ li {
 }
 
 header {
-  background: var(--bg-dark);
+  background: #000000;
+  padding-bottom: 20px;
 }
 
 .navbar {
@@ -41,7 +42,7 @@ header {
 }
 
 .nav-link:hover {
-  color: var(--hover-blue);
+  color: var(--main-hot);
 }
 
 .hamburger {
@@ -80,7 +81,7 @@ header {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: black;
+    background-color: var(--bg-black);
     width: 100%;
     text-align: center;
     transition: 0.3s;
