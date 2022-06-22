@@ -3,7 +3,7 @@
 :root {
   --bg-black: #071566e1;
   --bg-blue: #2d60ebb6;
-  --main-hot: #eb7412f6;
+  --main-hot: #b6e170e8;
   --bg--main-white: #fcfcfcfa;
 }
 
@@ -16,7 +16,7 @@
 
 body {
   font-size: 20px;
-
+  position: relative;
   background-color: var(--bg-main-white);
 }
 
@@ -26,9 +26,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 100px auto;
-}
-
-.container {
 }
 
 .private-form,
@@ -127,18 +124,8 @@ body {
   max-width: 50%;
 }
 
-/* Buttons*/
-.btn-container {
-  margin-top: 5rem;
-}
-
 .cta {
-  font-size: 1.8rem;
-  padding: 0.8rem;
-
   border: 5px solid var(--main-hot);
-  outline: none;
-  border-radius: 100vmax;
   background-color: var(--main-hot);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -154,8 +141,6 @@ body {
 }
 
 .cta-inverse {
-  font-size: 1.8rem;
-  padding: 0.8rem;
   border: 5px solid var(--bg-blue);
   outline: none;
   border-radius: 100vmax;
@@ -171,48 +156,111 @@ body {
   color: rgba(255, 255, 255, 0.89);
 }
 
-.red {
-  color: var(--main-hot);
-  font-family: "Source Code Pro", monospace;
-  font-weight: bold;
-}
-
-/* Presetation cards */
-.presentation-cards-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  margin: 0 2rem;
-  background-color: var(--bg-main-white);
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 4rem 0;
-}
-.presentation-cards-wrapper > h3,
-.presentation-cards-wrapper > p {
-  font-family: "Montserrat", sans-serif;
-  color: rgba(255, 255, 255, 0.966);
-}
-
-.presentation-wrapper-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  padding: 2em 0;
-  background-color: var(--bg--main-white);
-}
+/*  INTRODUCTORY PRESENTATION SECTION ABOUT SERVICES */
 .presentation-card {
   border-radius: 0.2rem;
   background: var(--bg-main-white);
   box-shadow: 10px 10px 15px #ececec, -10px -10px 15px #f5f4f4;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.container {
+.presentation-card-title {
+  font-size: 1.5rem;
+}
+.presentation-card-content {
+  margin: 2rem 0;
+}
+
+.about-us {
+  background-image: url("./img/earth-2.jpg");
+  /* border-top: 1.5rem solid var(--main-hot);
+  border-bottom: 1.5rem solid var(--main-hot); */
+  justify-content: space-around;
+  align-items: center;
+  height: 1500px;
+}
+
+.about-us > h3,
+.about-us > p {
+  width: 50%;
+}
+
+/*  FOOTER  */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: black;
+}
+
+/*  BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 100vmax;
+}
+
+.btn-container {
+  margin-top: 5rem;
+}
+
+/*  CONTAINERS  */
+.container-col {
   display: flex;
   flex-direction: column;
 }
 
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-intro {
+  justify-content: space-around;
+  padding: 6rem 5rem 3rem 5rem;
+}
+
+.container-cards {
+  justify-content: space-around;
+  padding: 3rem 5rem;
+  grid-gap: 0.8rem;
+}
+
+.last {
+  margin-bottom: 5em;
+}
+/* FONT AWESOME ICONS */
+.fa-solid {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--main-hot);
+}
+
+.email-icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 100;
+  font-size: 1.8rem;
+  justify-content: center;
+  margin-right: 0.5rem;
+  content: "\f0e0";
+}
+.people-icon::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 100;
+  font-size: 1.8rem;
+  justify-content: center;
+  margin-right: 0.5rem;
+  content: "\f4fb";
+}
+
+/*  MEDIA QUERIES */
 @media (max-width: 768px) {
   .wrapper {
     display: flex;
@@ -250,8 +298,6 @@ body {
     letter-spacing: 0.12rem;
     line-height: 3rem;
     font-family: "Source Code Pro", monospace;
-
-    max-width: 60%;
   }
 
   .presentation-cards-wrapper,
