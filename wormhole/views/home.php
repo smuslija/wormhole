@@ -6,15 +6,14 @@
             utilizzarlo rende possibile scenari sconosciuti
         </h3>
         <div class="btn-container">
-            <button class="btn cta-inverse people-icon">Chi Siamo?</button>
-            <button class="btn cta email-icon">Contattaci!</button>
+            <button class="btn cta email-icon">Contattaci</button>
         </div>
     </div>   
 
     <section class="container-col">
 
         <div class="container-row container-intro">
-            <h3 class="presentation-card-title" >Lorem Ipsum Dolor Sit Amet Consectutur</h3>
+            <h3 class="title" >Lorem Ipsum Dolor Sit Amet Consectutur</h3>
             <p>
                 Lorem, ipsum dolor 
                 sit amet consectetur 
@@ -35,7 +34,7 @@
                     </p>
                 </div>
                     <div class="presentation-presentation-card-header">
-                        <h3 class="presentation-card-title">Soluzioni Software</h3>
+                        <h3 class="title-card">Soluzioni Software</h3>
                     </div>
             </div>
 
@@ -50,7 +49,7 @@
                     </p>
                 </div>
                 <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Servizi Di Processo</h3>
+                    <h3 class="title-card">Servizi Di Processo</h3>
                 </div>
             </div>
 
@@ -63,7 +62,7 @@
                     </p>
                 </div>
                 <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Consulenza Aziendale</h3>
+                    <h3 class="title-card">Consulenza Aziendale</h3>
                 </div>
             </div>
         </div>
@@ -86,7 +85,7 @@
     <section class="container-col">
 
         <div class="container-row container-intro">
-            <h3 class="presentation-card-title" >Lorem Ipsum Dolor Sit Amet Consectutur</h3>
+            <h3 class="title" >Lorem Ipsum Dolor Sit Amet Consectutur</h3>
             <p>
                 Lorem, ipsum dolor 
                 sit amet consectetur 
@@ -107,7 +106,7 @@
                     </p>
                 </div>
                     <div class="presentation-presentation-card-header">
-                        <h3 class="presentation-card-title">Soluzioni Software</h3>
+                        <h3 class="title-card">Soluzioni Software</h3>
                     </div>
             </div>
 
@@ -122,7 +121,7 @@
                     </p>
                 </div>
                 <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Servizi Di Processo</h3>
+                    <h3 class="title-card">Servizi Di Processo</h3>
                 </div>
             </div>
 
@@ -135,7 +134,7 @@
                     </p>
                 </div>
                 <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Consulenza Aziendale</h3>
+                    <h3 class="title-card">Consulenza Aziendale</h3>
                 </div>
             </div>
         </div>
@@ -147,7 +146,7 @@
     <section class="container-col">
 
         <div class="container-row container-intro">
-            <h3 class="presentation-card-title" >Lorem Ipsum Dolor Sit Amet Consectutur</h3>
+            <h3 class="title" >Lorem Ipsum Dolor Sit Amet Consectutur</h3>
             <p>
                 Lorem, ipsum dolor 
                 sit amet consectetur 
@@ -168,7 +167,7 @@
                     </p>
                 </div>
                     <div class="presentation-presentation-card-header">
-                        <h3 class="presentation-card-title">Soluzioni Software</h3>
+                        <h3 class="title-card">Soluzioni Software</h3>
                     </div>
             </div>
 
@@ -183,7 +182,7 @@
                     </p>
                 </div>
                 <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Servizi Di Processo</h3>
+                    <h3 class="title-card">Servizi Di Processo</h3>
                 </div>
             </div>
 
@@ -196,69 +195,12 @@
                     </p>
                 </div>
                 <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Consulenza Aziendale</h3>
+                    <h3 class="title-card">Consulenza Aziendale</h3>
                 </div>
             </div>
         </div>
 
-    </section>
-
-    <section class="container-col last">
-
-        <div class="container-row container-intro">
-            <h3 class="presentation-card-title" >Lorem Ipsum Dolor Sit Amet Consectutur</h3>
-            <p>
-                Lorem, ipsum dolor 
-                sit amet consectetur 
-                adipisicing elit.
-                Rem quis pariatur maiore
-            </p>
-        </div>
-
-        <div class="container-row container-cards">
-            <div class="presentation-card">
-                <i class="fa-solid fa-code"></i>
-                <div class="presentation-card-body">
-                    <p class="presentation-card-content">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quaerat atque earum 
-                        iure eius qui quo optio nihil numquam 
-                        incidunt dolorum.
-                    </p>
-                </div>
-                    <div class="presentation-presentation-card-header">
-                        <h3 class="presentation-card-title">Soluzioni Software</h3>
-                    </div>
-            </div>
-
-            <div class="card presentation-card">
-                <i class="fa-solid fa-desktop"></i>
-                <div class="presentation-card-body">
-                    <p class="presentation-card-content">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quaerat atque earum 
-                        iure eius qui quo optio 
-                        nihil numquam incidunt dolorum.
-                    </p>
-                </div>
-                <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Servizi Di Processo</h3>
-                </div>
-            </div>
-
-            <div class="card presentation-card">
-                <i class="fa-solid fa-briefcase"></i>
-                <div class="presentation-card-body">
-                    <p class="presentation-card-content">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quaerat atque earum iure eius qui quo optio nihil numquam incidunt dolorum.
-                    </p>
-                </div>
-                <div class="presentation-card-header">
-                    <h3 class="presentation-card-title">Consulenza Aziendale</h3>
-                </div>
-            </div>
-        </div>
+   
 
     </section>
 </div>

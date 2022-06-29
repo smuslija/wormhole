@@ -156,14 +156,26 @@ class UiController {
         $responseDb = PostsDataModel::showAllPostsDataModel("public.posts");
 
         foreach($responseDb as $row=>$data){
-            echo ('
-                <article class="blog-post">
-                    <h3 class="post-title">' . $data["title"]    . '</h3>
-                    <p class="post-body">' . $data["body"] . '</p class="post-body">
-                    <h6 class="post-author">' . $data["userid"] . '</h6>
-                    <span><a href="index.php?action=update-post&post-id='.$data["id"].'"><button class="btn btn-success">Modifica</button></a></span>
-                    <span><a href="index.php?action=users&delete-post='.$data["id"].'"><button class="btn btn-danger">Cancella</button></a></span>
-                </article>');
+            echo ('                
+                <div class="blog-post-card container-column">
+                    <div class="blog-post-card-image"></div>
+                    <div class="container-column blog-post-card-content">
+                         <p class="calendar-icon">01/01/2000</p>
+                        
+                        
+                            <h3 class="blog-post-card-title">'.$data["title"].'</h3>
+                                                    
+                      
+                        
+                        
+                        
+                            <p class="blog-post-card-intro">'.$data["body"].'</p class="post-body">
+
+                            
+                    </div>
+                    <a class="blog-post-card-link">Approfondisci</a>
+                </div>
+                ');
         }
     } 
 
