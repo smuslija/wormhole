@@ -1,16 +1,16 @@
 <?php
 session_start();
-if(!(isset($_SESSION['validation']) && !(isset($_SESSION['admin'])))){
-    header('views/login.php');
+if(!isset($_SESSION['validation']) && !isset($_SESSION['admin'])){
+    header('location:index.php?action=login'); 
 }
 ?>
 <h2>Private admin</h2>
 <form method="post" id="create-user-form">
-    <input type="email" name="create-email" placeholder="email">
-    <input type="password" name="create-password" placeholder="password">
-    <input type="text" name="create-first-name" placeholder="first-name">
-    <input type="text" name="create-last-name" placeholder="last-name">
-    <input type="number" name="create-role" placeholder="role">
+    <input type="email" name="create-email" id="create-email" placeholder="create-email">
+    <input type="password" name="create-password" id="create-password" placeholder="create-password">
+    <input type="text" name="create-first-name" id="create-first-name" placeholder="first-name">
+    <input type="text" name="create-last-name" id="create-last-name" placeholder="last-name">
+    <input type="text" name="create-role" id="create-role" placeholder="role">
     <button type="submit" name="create-user-submit">Submit</button>
 </form>
 

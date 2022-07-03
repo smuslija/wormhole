@@ -11,22 +11,24 @@ class UsersModel extends Dbh{
     }
 
     public static function createUserModel($userData, $table){
-        
-        $stmt = Dbh::connect()->prepare("INSERT INTO $table(email,password,first_name,last_name,role) VALUES(:email,:password,:firstName,:lastName,:role)");
+        if(!empty($userData) && !empty($table)){
+            $stmt = Dbh::connect()->prepare("INSERT INTO $table(email,password,first_name,last_name,role) VALUES(:email,:password,:firstName,:lastName,:role)");
 
-        $stmt->bindParam(":email", $userData["email"], PDO::PARAM_STR);
-        $stmt->bindParam(":password", $userData["password"], PDO::PARAM_STR);
-        $stmt->bindParam(":firstName", $userData["first-name"], PDO::PARAM_STR);
-        $stmt->bindParam(":lastName", $userData["last-name"], PDO::PARAM_STR);
-        $stmt->bindParam(":role", $userData["role"], PDO::PARAM_INT);
-
-        if($stmt->execute()){
-            return 'success';
-
-        }else{
-            return 'error';
+            $stmt->bindParam(":email", $userData["email"], PDO::PARAM_STR);
+            $stmt->bindParam(":password", $userData["password"], PDO::PARAM_STR);
+            $stmt->bindParam(":firstName", $userData["first-name"], PDO::PARAM_STR);
+            $stmt->bindParam(":lastName", $userData["last-name"], PDO::PARAM_STR);
+            $stmt->bindParam(':role', $userData["role"], PDO::PARAM_STR);
+    
+            if($stmt->execute()){
+                return 'success';
+    
+            }else{
+                return 'error';
+            }
+    
+            $stmt->close();
         }
-
-        $stmt->close();
+       
     }
 }

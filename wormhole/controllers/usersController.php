@@ -19,7 +19,7 @@ class UsersController{
                 //creo una variabile di sessione
                 $_SESSION['validation'] = true;
                 
-                if($dbResponse['role'] == 1){
+                if($dbResponse['role'] == '1'){
                     $_SESSION['admin'] = true ;
                 }
                
@@ -51,6 +51,10 @@ class UsersController{
                 'role' => $_POST['create-role'],
             );
             $dbResponse = UsersModel::createUserModel($userData, 'public.users');
+
+            if($dbResponse == 'succes'){
+                echo'<h1>User added corectly</h1>';
+            }
         }
 
         
