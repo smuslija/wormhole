@@ -1,4 +1,5 @@
 <?php
+require('C:/xampp/htdocs/wormhole/wormhole/assets/includes/formnValidator.php');
 class UsersController{
 
     public function loginUserController(){
@@ -50,13 +51,23 @@ class UsersController{
                 'last-name' => $_POST['create-last-name'],
                 'role' => $_POST['create-role'],
             );
-            $dbResponse = UsersModel::createUserModel($userData, 'public.users');
+            $notEmptyInputs = notEmptyInputs($userData);
+            if($notEmptyInputs){
+                $dbResponse = UsersModel::createUserModel($userData, 'public.users');
 
-            if($dbResponse == 'succes'){
-                echo'<h1>User added corectly</h1>';
+                if($dbResponse == 'success'){
+                    echo'<h1>User added corectly</h1>';
+                }else{
+                    echo'error erro error';
+                }
+            }else{
+                echo'Fill all inputs';
             }
+          
         }
 
         
     }
+
+   
 }

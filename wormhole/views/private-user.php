@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(null !== $_SESSION['validation']){
-    header('location:index.php?action=home');
+if(!isset($_SESSION['validation'])){
+    header('location:index.php?action=login');
 }
 ?>
 <h2>private user</h2>

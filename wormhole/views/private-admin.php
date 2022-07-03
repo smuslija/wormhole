@@ -4,6 +4,7 @@ if(!isset($_SESSION['validation']) && !isset($_SESSION['admin'])){
     header('location:index.php?action=login'); 
 }
 ?>
+<div class="hidden msg error-msg">hidden</div>
 <h2>Private admin</h2>
 <form method="post" id="create-user-form">
     <input type="email" name="create-email" id="create-email" placeholder="create-email">
@@ -25,4 +26,4 @@ $usersController->createUserController();
     }
 } */
 ?>
-<script type="text/javascript" src="./assets/js/main.js" ></script>
+<script src="./assets/js/main.js" type="module" ></script>
