@@ -1,7 +1,10 @@
 <?php
+if(!isset($_SESSION)){
+    session_start();
+    
+}
 
-session_start();
-unset($_SESSION['validation']);
+/* unset($_SESSION['validation']);
 // Unset all of the session variables.
 $_SESSION = array();
 
@@ -13,7 +16,7 @@ if (ini_get("session.use_cookies")) {
         $params["path"], $params["domain"],
         $params["secure"], $params["httponly"]
     );
-}
+} */
 
 // Finally, destroy the session.
 session_destroy();

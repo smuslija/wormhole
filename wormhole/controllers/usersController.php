@@ -56,7 +56,7 @@ class UsersController{
                 $dbResponse = UsersModel::createUserModel($userData, 'public.users');
 
                 if($dbResponse == 'success'){
-                    echo'<h1>User added corectly</h1>';
+                    echo'<li class="msg">User added corectly</h1>';
                 }else{
                     echo'error erro error';
                 }

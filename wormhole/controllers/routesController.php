@@ -23,6 +23,9 @@ class routesController{
             case 'login':
                 $url = 'views/login.php';
                 break;
+            case 'error-login':
+                $url = 'views/login.php';
+                break;
             case 'logout':
                 $url = 'views/logout.php';
                 break;

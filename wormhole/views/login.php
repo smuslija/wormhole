@@ -1,5 +1,7 @@
 <?php
-session_start();
+if(!isset($_SESSION)){
+    session_start();
+}
 
 if(isset($_SESSION['validation'])){
     
@@ -7,11 +9,15 @@ if(isset($_SESSION['validation'])){
 }
 
 ?>
-<form method="post">
-    <input type="email" name="login-email">
-    <input type="password" name="login-password">
-    <button type="submit" name="login-submit">Submit</button>
-</form>
+
+<div class="form-container column">
+    <h3  class="ff-sans-cond uppercase text-white letter-spacing-2">Login</h3>
+    <form method="post" tabindex="0" id="login-form" class="column form">
+        <input class="form-input" type="email" tabindex="0"  name="login-email" id="login-email" placeholder="login-email">
+        <input class="form-input" type="password" tabindex="0" name="login-password" id="login-password" placeholder="login-password">
+        <button class="btn form-btn"type="submit" name="login-submit">Submit</button>
+    </form>
+</div>
 
 <?php
 $usersController = new UsersController();
